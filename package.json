@@ -1,0 +1,12 @@
+{
+  "name": "armamed-nl-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}
