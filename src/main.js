@@ -23,6 +23,8 @@ document.querySelector('.portrait-frame img')?.addEventListener('error', (event)
 document.querySelector('#lead-form')?.addEventListener('submit', (event) => {
   event.preventDefault();
   const status = event.currentTarget.querySelector('.form-status');
-  status.textContent = 'Bedankt. Uw aanvraag staat klaar om te versturen.';
+  status.textContent = document.documentElement.lang === 'en'
+    ? 'Thank you. Your request is ready to be sent.'
+    : 'Bedankt. Uw aanvraag staat klaar om te versturen.';
   // Connect this form to the chosen CRM or email endpoint before publishing.
 });
